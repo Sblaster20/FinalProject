@@ -2,11 +2,8 @@ public Enemy extends GameObject
 {
   private int dx;
   private int dy;
-  private Direction;
-  private Enemy[] greens;
-  private Enemy[][] reds;
-  private Enemy[][] blue;
-  
+  private Direction direction;
+  private int numlives;
 
   public Enemy(int x, int y)
   {
@@ -22,5 +19,7 @@ public Enemy extends GameObject
   //second and third rows are red/white, max of 8 across
   //fouth and fifth rows are blue/yellow, max of 10 across 
 //all enemies in the rows shift one direction at a time once reaching the side, they shift down 
+
+// might split into differnet classes for the enemies 
 }
 
