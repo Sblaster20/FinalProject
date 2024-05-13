@@ -2,7 +2,10 @@ public Enemy extends GameObject
 {
   private int dx;
   private int dy;
-  private Enemy[][];
+  private Direction;
+  private Enemy[] greens;
+  private Enemy[][] reds;
+  private Enemy[][] blue;
   
 
   public Enemy(int x, int y)
@@ -10,11 +13,14 @@ public Enemy extends GameObject
     
   }  
 
-//3 different types of enemys, each has dif sprite 
-    //Green - two lives, changes to blue/white sprite once hit, flies into place but will dive bomb, can fire laser blasts
-    //Blue/Yellow - one life, will fly and around and dive bomb
-    //Red/white - one life, flies into place and stay, can fire laser blasts
-//Green enemies fill top row of ships, blue/yellwo fill bottom, red/white fill middle
-//all enemies in the rows shift one direction at a time once reachign the side, they shift down 
+//3 different types of enemys, each has dif sprite, they come in as waves of 8 (varied colors) and fly to their spots 
+    //Green - two lives, changes to blue/white sprite once hit, 
+    //Blue/Yellow - one life, fires laser blasts
+    //Red/white - one life, fires laser blasts
+//five total rows of enemies
+  //first(top) row of enemies is green, max of 4 across
+  //second and third rows are red/white, max of 8 across
+  //fouth and fifth rows are blue/yellow, max of 10 across 
+//all enemies in the rows shift one direction at a time once reaching the side, they shift down 
 }
 
