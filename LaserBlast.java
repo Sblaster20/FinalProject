@@ -1,6 +1,6 @@
 import javax.swing.ImageIcon;
 
-public class Fireball extends GameObject {
+public class LaserBlast extends GameObject {
 
     
     private int dx;
