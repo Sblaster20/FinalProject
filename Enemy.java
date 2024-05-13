@@ -1,12 +1,18 @@
-public Enemy extends GameObject
+public class Enemy extends GameObject
 {
   private int dx;
   private int dy;
   private Direction direction;
   private int numlives;
+  private char type;
 
-  public Enemy(int x, int y)
+  private static Enemy[] greens = new Enemy[4];
+  private static Enemy[][] reds = new Enemy[8][2];
+  private static Enemy [][] blues = new Enemy[10][2];
+
+  public Enemy(int x, int x)
   {
+    super(x, y);
     
   }  
 
